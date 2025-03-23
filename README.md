@@ -1,6 +1,6 @@
 🐳 Francinette Docker Environment
 
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=n](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logimg.shields.io/badge/python-3670A0?style=for-the-badge&log Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=whiteains a Docker setup for a development environment with Francinette, Norminette, and other useful tools for 42 School projects.
+#a Docker setup for a development environment with Francinette, Norminette, and other useful tools for 42 School projects.
 📁 Repository Contents
 
     Dockerfile: Defines the Docker image with all necessary tools and configurations.
