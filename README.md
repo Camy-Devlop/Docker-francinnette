@@ -1,6 +1,6 @@
 🐳 Francinette Docker Environment
 
-#a Docker setup for a development environment with Francinette, Norminette, and other useful tools for 42 School projects.
+A Docker setup for a development environment with Francinette, Norminette, and other useful tools for 42 School projects.
 📁 Repository Contents
 
     Dockerfile: Defines the Docker image with all necessary tools and configurations.
