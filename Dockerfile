@@ -24,6 +24,11 @@ RUN python3 -m pip install --upgrade pip setuptools --break-system-packages
 RUN python3 -m pip install norminette --break-system-packages
 RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
-
+RUN mkdir /script
+COPY start.sh /script/start.sh
+RUN chmod +x /script/start.sh
+COPY msg.sh /script/msg.sh
+RUN chmod +x /script/msg.sh
 WORKDIR /app
-CMD ["zsh"]
+RUN zsh
+CMD ["/script/start.sh"]
