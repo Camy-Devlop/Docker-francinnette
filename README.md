@@ -74,10 +74,8 @@ R : Vérifie que tu as bien entré le chemin complet de ton dossier `libft` lors
 **Q : Comment sortir du conteneur ?**  
 R : Tape `exit` dans le terminal du conteneur.
 
----
-
 ## 🎨 Visuel
-<pre> ``` +-------------------+
+<pre>+-------------------+
 |  Ton dossier      |
 |  libft/           |
 +-------------------+
@@ -91,7 +89,7 @@ R : Tape `exit` dans le terminal du conteneur.
          v
 +-------------------+
 |  Résultats tests  |
-+-------------------+``` </pre>
++-------------------+</pre>
 
 +-------------------+
 | Ton dossier       |
