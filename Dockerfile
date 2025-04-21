@@ -30,4 +30,7 @@ RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/mast
 RUN bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
 RUN git clone https://github.com/Tripouille/libftTester /app/libftTester
 WORKDIR /app
-CMD ["zsh"]
+COPY start.sh /root/start.sh
+RUN chmod 770 /root/start.sh
+CMD ["/root/start.sh"]
+
