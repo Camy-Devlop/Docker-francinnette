@@ -31,6 +31,9 @@ RUN bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/maste
 RUN git clone https://github.com/Tripouille/libftTester /app/libftTester
 WORKDIR /app
 COPY start.sh /root/start.sh
-RUN chmod 770 /root/start.sh
-CMD ["/root/start.sh"]
+RUN chmod 777 /root/start.sh
+RUN echo "if [ -f "$HOME/start.sh" ]; then " >> /root/.zshrc
+RUN echo  "  bash "$HOME/start.sh" " >> /root/.zshrc
+RUN echo "fi" >> /root/.zshrc
+CMD ["zsh"]
 
