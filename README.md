@@ -77,7 +77,7 @@ R : Tape `exit` dans le terminal du conteneur.
 ---
 
 ## 🎨 Visuel
-+-------------------+
+<pre> ``` +-------------------+
 |  Ton dossier      |
 |  libft/           |
 +-------------------+
@@ -91,7 +91,7 @@ R : Tape `exit` dans le terminal du conteneur.
          v
 +-------------------+
 |  Résultats tests  |
-+-------------------+
++-------------------+``` </pre>
 
 +-------------------+
 | Ton dossier       |
