@@ -91,20 +91,6 @@ R : Tape `exit` dans le terminal du conteneur.
 |  Résultats tests  |
 +-------------------+</pre>
 
-+-------------------+
-| Ton dossier       |
-| libft/            |
-+-------------------+
-|   v ......        |
-+-------------------+
-| Docker Container  |
-| (Francinette)     |
-+-------------------+
-|    v ......       |
-+-------------------+
-| Résultats tests   |
-+-------------------+
-
 ## 🤝 Remerciements
 
 - [Francinette](https://github.com/xicodomingues/francinette)
