@@ -1,4 +1,6 @@
 FROM debian
+ARG COMMIT_HASH
+ENV COMMIT_HASH=$COMMIT_HASH
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     	apt-utils \
@@ -29,6 +31,8 @@ RUN python3 -m pip install norminette --break-system-packages
 RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
 RUN git clone https://github.com/Tripouille/libftTester /app/libftTester
+RUN echo "Commit utilisé pour ce build : $COMMIT_HASH"
+
 WORKDIR /app
 COPY start.sh /root/start.sh
 RUN chmod 777 /root/start.sh
