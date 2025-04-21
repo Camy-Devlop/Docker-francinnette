@@ -78,18 +78,30 @@ R : Tape `exit` dans le terminal du conteneur.
 
 ## 🎨 Visuel
 
++-------------------+
+
+| Ton dossier |
+
+| libft/ |
+
 +-------------------+\n
-| Ton dossier |\n
-| libft/ |\n
-+-------------------+\n
+
 | v ......\n
+
 +-------------------+\n
+
 | Docker Container |\n
+
 | (Francinette) |\n
+
 +-------------------+\n
+
 | v ......\n
+
 +-------------------+\n
+
 | Résultats tests |\n
+
 +-------------------+\n
 
 ## 🤝 Remerciements
