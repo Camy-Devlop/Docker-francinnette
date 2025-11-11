@@ -14,8 +14,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	gcc \
 	iptables \
 	lldb \
-	python3>=3.11 \
-	python3.11-venv \
+	python3 \
+	python3-venv \
 	python3-pip \
 	sudo \
 	libpq-dev \
@@ -36,7 +36,7 @@ RUN tar -xvf /opt/src/valgrind-3.22.0.tar.bz2 -C /opt/src
 RUN cd /opt/src/valgrind-3.22.0 && bash autogen.sh && ./configure && make && make install
 RUN git clone https://github.com/42Paris/norminette.git ~/.norminette/
 RUN echo 'alias norminette="~/.norminette/norminette.rb"' >> ~/.zshrc
-RUN python3 -m pip install --upgrade pip setuptools --break-system-packages
+RUN python3 -m pip install pip setuptools --break-system-packages
 RUN python3 -m pip install norminette --break-system-packages
 RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
